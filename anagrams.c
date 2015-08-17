@@ -4,6 +4,8 @@
 #include <ctype.h>
 #include <string.h>
 
+#include "program.h"
+
 int checkAnagrams(char *string1, char *string2) {
   
   char *s1 = string1;
@@ -33,21 +35,3 @@ int checkAnagrams(char *string1, char *string2) {
 
 }
 
-int main(void) {
-
-  char *string1 = malloc(70 * sizeof(char));
-  char *string2 = malloc(70 * sizeof(char));
-  printf("ANAGRAMS - ANAGRAMMI\n");
-  printf("> Insert your two strings:\n");
-  printf("> ");
-  scanf("%s", string1);
-  printf("> ");
-  scanf("%s", string2);
-  int result = checkAnagrams(string1, string2);
-  printf("> Anagram Check: ");
-  printf(result ? "POSITIVE\n" : "NEGATIVE\n");
-  free(string1);
-  free(string2);
-  return 0;
-
-}

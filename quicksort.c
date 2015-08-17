@@ -40,15 +40,4 @@ void quicksort(char *string, int l, int r) {
 
 }
 
-int main(void) {
-
-  printf("Insert string to sort and l r parameters:\n");
-  printf("> ");
-  char *string = malloc(70 * sizeof(char));
-  int l, r;
-  scanf("%s %d %d", string, &l, &r);
-  quicksort(string,l, r);
-  printf("> Sorted: %s\n", string);
-  return 0;
-  
-} 
+ 
