@@ -21,13 +21,3 @@ char *secretCode(char *string, int k) {
   return string;
 }
 
-//int main(void) {
-//  printf("SECRET CODES - CODICI SEGRETI\n");
-//  printf("> Insert the word to encode and the coding parameter:\n> ");
-//  int k;
-//  char *string = malloc(70 * sizeof(char));
-//  scanf("%s %d", string, &k);
-//  printf("> Encoding outcome: %s\n", secretCode(string, k));
-//  free(string);
-//  return 0;
-//}
